@@ -1,0 +1,194 @@
+@import'./header.scss';
+@import'./intro.scss';
+@import'./card.scss';
+
+
+html{
+    font-size: 16px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    color: #FFFFFF;
+}
+p{
+    margin: 0;
+}
+.mycol{
+    padding: 0;
+}
+.myrow{
+    padding: 0;
+}
+.btn__general{
+    display: inline-block;
+    color: $orange;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+    letter-spacing: 0.035rem;
+    line-height: 0.625rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+
+@media screen and (min-width: 1400px){
+    .intro{
+        background-image: url("../img/background-1920.png");   
+    }
+}
+@media screen and (max-width: 1200px){
+    .btn__general{
+        .intro__leaf{
+            position: absolute;
+            top: 70%;
+            left: 50%;  
+        }
+    }
+    
+}
+@media screen and (min-width: 1079px){
+    .btn__general a:first-of-type{
+        margin-bottom: 1.25rem;
+    }
+}
+@media screen and (max-width: 1075px){
+    .btn__general{
+        margin-top: -0.75rem;
+    }
+    .btn__general a:last-of-type{
+        margin-bottom: 5rem;
+    }  
+    .btn__general a:first-of-type{
+        margin-bottom: 1.25rem;
+    } 
+
+}
+
+@media screen and (min-width: 992px){
+    .hamburger__active{
+        display: none;
+    }
+} 
+@media screen and (max-width: 992px){
+    .header__menu p{
+        display: none;
+    }
+    .wrapp__menu-mobil{
+        display: none;
+        flex-direction: column;  
+    }
+    .wrapp__menu-mobil.active{
+        display: flex;
+        flex-direction: column; 
+    }
+    .header__menu.active{
+        display: flex;
+        text-align: left!important;
+    }
+    .wrapp__menulist{
+        display: flex;
+        flex-direction: column!important;
+    }
+    .card-group{
+        flex-direction: column;
+    }
+    .hamburger__active{
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+    }
+    .card{
+        margin-bottom: 30px;
+    } 
+}  
+@media screen and (max-width: 992px){
+    .intro{
+        .intro__wrapper{
+            .intro__img{
+                .intro__leaf2{
+                    position: absolute;
+                    top: -4%;
+                    right: -3%;
+                    max-width: 40%; 
+                }
+            }
+        }
+    }
+    
+    .btn__general{
+        .intro__leaf{
+            position: absolute;
+            top: 65%;
+            left: 68%;
+            width: 60%
+        } 
+    }
+ 
+}
+@media screen and (max-width: 940px){
+    .intro__leaf2{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px){
+    .btn__general{
+        .intro__leaf{
+            position: absolute;
+            top: 125%;
+            right: 0%; 
+            width: 40%; 
+        } 
+    }
+   
+}
+@media screen and (max-width: 630px){
+    .btn__general{
+        .intro__leaf{
+            position: absolute;
+            top: 135%;
+            right: 0%; 
+            width: 30%; 
+        }
+    }
+    
+}
+@media screen and (max-width: 456px){
+    .btn__general{
+        .intro__leaf{
+            position: absolute;
+            top: 75%;
+            right: 0%; 
+            width: 30%; 
+        }
+    }
+   
+    .btn__general a:first-of-type {
+        margin-bottom: 2rem;
+        
+    }
+}
+@media screen and (max-width: 325px){
+    .btn__general{
+        .intro__leaf{
+            display: none;
+        }
+    }
+    .intro__img {
+        max-width: 80%;
+    } 
+    .btn__general a:last-of-type {
+        margin-bottom: 3rem;
+
+    }
+}
+
+
+
+
+
+
